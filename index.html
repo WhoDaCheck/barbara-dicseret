@@ -35,16 +35,27 @@
       z-index: 2;
       transition: opacity 0.5s ease;
       box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
       width: var(--oval-width);
       height: var(--oval-height);
       user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
     }
     .name-oval span {
-      pointer-events: none;
-      padding: 1vh;
+      display: block;
+      width: 100%;
+      height: 100%;
+      line-height: 1.2;
+      /* pointer-events: none; eltávolítva */
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .name-oval:focus {
+      outline: none;
     }
     .message-oval {
       background-color: #ffffff;
